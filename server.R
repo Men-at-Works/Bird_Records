@@ -33,13 +33,4 @@ shinyServer(function(input, output) {
       geom_point(aes(x = lon, y = lat), data = lonlat, color = "yellow") +
       theme_void()
   })
-   
-#   output$distPlot <- renderPlot({
-#     # generate bins based on input$bins from ui.R
-#     input$submit
-#     x    <- faithful[, 2] 
-#     bins <- seq(min(x), max(x), length.out = input$bins + 1)
-#     # draw the histogram with the specified number of bins
-#     hist(x, breaks = bins, col = 'darkgray', border = 'white')
-#   })
 })
