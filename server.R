@@ -13,7 +13,6 @@ saveData <- function(my_data) {
               )
 }
 
-# Define server logic required to draw a histogram
 shinyServer(function(input, output) {
   formData <- reactive({
     sapply(fields, function(x) input[[x]])
